@@ -16,7 +16,7 @@
         }
     },
     "mail": {
-        "from": "'Custom Name' <myemail@address.com>", 
+        "from": "Nokasa' <nokasablog@gmail.com>", 
         "transport": "SMTP",
         "logger": true,
         "options": {
