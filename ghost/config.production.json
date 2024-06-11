@@ -1,5 +1,5 @@
 {
-    "url": "http://yourdomain",
+    "url": "https://nokasa.co/blog",
     "server": {
         "port": 2368,
         "host": "0.0.0.0"
@@ -9,8 +9,8 @@
         "connection": {
             "host": "mysql",
             "port": 3306,
-            "user": "",
-            "password": "",
+            "user": "user",
+            "password": "Nokasa@2024",
             "database": "ghostdata",
             "charset": "utf8mb4"
         }
@@ -20,11 +20,11 @@
         "transport": "SMTP",
         "logger": true,
         "options": {
-            "host": "",
-            "secureConnection": false,
+            "host": "smtp.gmail.com",
+            "secureConnection": true,
             "auth": {
-                "user": "",
-                "pass": ""
+                "user": "nokasablog@gmail.com",
+                "pass": "Nokasa@2024"
             }
         }
     },

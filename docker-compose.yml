@@ -8,8 +8,8 @@ services:
     ports:
       - 443:443
     volumes:
-      - ./nginx/ssl/yourhost.xyz.key:/etc/nginx/yourhost.xyz.key:ro
-      - ./nginx/ssl/yourhost.xyz.crt:/etc/nginx/yourhost.xyz.crt:ro
+      - ./nginx/ssl/private.key:/etc/nginx/private.key:ro
+      - ./nginx/ssl/certificate.crt:/etc/nginx/certificate.crt:ro
       - ./nginx/conf/ghost.conf:/etc/nginx/conf.d/ghost.conf:z
     links:
       - ghost
@@ -39,8 +39,8 @@ services:
       - "3306"
     environment:
       # Beware of special characters in password that can be interpreted by shell
-      - MYSQL_ROOT_PASSWORD= #specify your root pass
+      - MYSQL_ROOT_PASSWORD= 'Nokasa@2024' #specify your root pass
       - MYSQL_DATABASE=ghostdata
       - MYSQL_USER=ghostusr
-      - MYSQL_PASSWORD= xyx #please change this
+      - MYSQL_PASSWORD= 'Nokasa@2024' #please change this
     restart: always
